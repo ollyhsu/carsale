@@ -75,12 +75,12 @@
     where id = #{id,jdbcType=BIGINT}
   </delete>
   <insert id="insert" parameterType="com.cslg.pojo.Car">
-    insert into car (id, series_id, type, 
-      color, price, sale_price, 
+    insert into car (id, series_id, type,
+      color, price, sale_price,
       repertory, create_time, status
       )
-    values (#{id,jdbcType=BIGINT}, #{seriesId,jdbcType=INTEGER}, #{type,jdbcType=VARCHAR}, 
-      #{color,jdbcType=VARCHAR}, #{price,jdbcType=DECIMAL}, #{salePrice,jdbcType=DECIMAL}, 
+    values (#{id,jdbcType=BIGINT}, #{seriesId,jdbcType=INTEGER}, #{type,jdbcType=VARCHAR},
+      #{color,jdbcType=VARCHAR}, #{price,jdbcType=DECIMAL}, #{salePrice,jdbcType=DECIMAL},
       #{repertory,jdbcType=INTEGER}, now(), #{status,jdbcType=VARCHAR}
       )
   </insert>

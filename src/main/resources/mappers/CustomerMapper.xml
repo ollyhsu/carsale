@@ -58,7 +58,7 @@
     insert into customer (id, name, phone, 
       id_card, create_time)
     values (#{id,jdbcType=BIGINT}, #{name,jdbcType=VARCHAR}, #{phone,jdbcType=VARCHAR}, 
-      #{idCard,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP})
+      #{idCard,jdbcType=VARCHAR}, now())
   </insert>
   <insert id="insertSelective" parameterType="com.cslg.pojo.Customer">
     insert into customer
